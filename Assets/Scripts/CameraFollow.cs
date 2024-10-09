@@ -46,12 +46,7 @@ public class CameraFollow : MonoBehaviour
       //Wall follow
       this.Wall.transform.position = this.transform.position + this.wallDistance;
       //Roll wall texture
-      // wallMeshRenderer.materials[0].mainTextureOffset = new Vector2(this.Wall.transform.position.x / -100, Follow.transform.position.y / -100);
       wallMeshRenderer.materials[0].mainTextureOffset = new Vector2(this.Wall.transform.position.x / -100, this.Wall.transform.position.y / -100);
-      // if (wallMeshRenderer.materials[0].mainTextureOffset.y < this.wallMoveDestination.y){
-      // } else if (this.wallMeshRenderer.materials[0].mainTextureOffset.y > this.wallMoveDestination.y){
-
-      // }
     }
 
     public void UpdateFollow(GameObject toFollow) {
