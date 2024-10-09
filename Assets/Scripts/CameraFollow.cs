@@ -45,7 +45,7 @@ public class CameraFollow : MonoBehaviour
       this.transform.position = new Vector3(this.transform.position.x, this.verticalMoveCameraY, this.transform.position.z);
       //Wall follow
       this.Wall.transform.position = this.transform.position + this.wallDistance;
-      //Roll wall texture
+      //Roll wall texture 
       wallMeshRenderer.materials[0].mainTextureOffset = new Vector2(this.Wall.transform.position.x / -100, this.Wall.transform.position.y / -100);
     }
 
