@@ -33,6 +33,7 @@ public class CameraFollow : MonoBehaviour
       this.wallFrontDistance = this.WallFront.transform.position - this.transform.position;
       this.wallBackMeshRenderer = WallBack.GetComponent<MeshRenderer>();
       this.wallFrontMeshRenderer = WallFront.GetComponent<MeshRenderer>();
+      this.verticalMoveCameraY = this.transform.position.y;
       UpdateFollow(Follow);
     }
 
